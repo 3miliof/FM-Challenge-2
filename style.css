@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    
+}
+
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background:  hsl(233, 47%, 7%);
+    z-index: -1;
+}
+
+.theImage {
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+    top: 0;
+}
+.containerBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 90vh;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    background-color:  hsl(244, 38%, 16%);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.bigText {
+    font-size: 6vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.smallText {
+    font-size: 3.5vw;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    margin-top: 2.5vh;
+    margin-left: 4vw;
+    margin-right:4vw;
+}
+
+.statsBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bigStatText {
+    margin-top: 3.5vh;
+    font-size: 5vw;
+    font-family: "Inter", sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.smallStatText {
+    margin-top: 0.5vh;
+    font-size: 3.5vw;
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 500px) {
+
+    .statsBox {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .statsBox > div {
+        padding-top: 5vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    .containerBox {
+        flex-direction: row-reverse;
+        width: 70vw;
+        height: 60vh;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%,-50%);
+        margin: 0;
+    }
+
+    .theImage {
+        width: 50%;
+        height: 100%;
+    }
+
+    .text {
+        text-align: left;
+        margin-top: 2vh;
+        max-width: 50%;
+    }
+
+    .bigText {
+        margin-top: 5vh;
+        font-size: 2.5vw;
+    }
+
+    .smallText {
+        font-size: 1vw;
+        margin-top: 6.5vh;
+    }
+
+    .statsBox {
+        flex-direction: row;
+        text-align: left;
+        margin-left: 2.5vw;
+        margin-top: 3vh;
+    }
+
+    .statsBox > div {
+        padding-top: 5vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .bigStatText {
+        font-size: 1.5vw;
+    }
+
+    .smallStatText {
+        font-size: 1vw;
+    }
+
+}
